@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class CanUndoRedoHandler : MulticastDelegate
 {
-	// Token: 0x020001FD RID: 509
-	// (Invoke) Token: 0x06001766 RID: 5990
-	public delegate void CanUndoRedoHandler(UndoRedoOpType undoRedoOpType, YesNoAnswer answer);
+
+	public CanUndoRedoHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(UndoRedoOpType undoRedoOpType, YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(UndoRedoOpType undoRedoOpType, YesNoAnswer answer) { }
+
 }
+

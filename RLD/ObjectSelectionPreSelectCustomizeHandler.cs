@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionPreSelectCustomizeHandler : MulticastDelegate
 {
-	// Token: 0x02000236 RID: 566
-	// (Invoke) Token: 0x060018A5 RID: 6309
-	public delegate void ObjectSelectionPreSelectCustomizeHandler(ObjectPreSelectCustomizeInfo customizeInfo, List<GameObject> toBeSelected);
+
+	public ObjectSelectionPreSelectCustomizeHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(ObjectPreSelectCustomizeInfo customizeInfo, List<GameObject> toBeSelected, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(ObjectPreSelectCustomizeInfo customizeInfo, List<GameObject> toBeSelected) { }
+
 }
+

@@ -1,22 +1,15 @@
-﻿using System;
-using UnityEngine;
+//Type is in global namespace
 
-// Token: 0x02000002 RID: 2
 public class ScreamStateBehaviour : StateMachineBehaviour
 {
-	// Token: 0x06000001 RID: 1 RVA: 0x00015DA3 File Offset: 0x00013FA3
-	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-	{
-	}
+	public Texture2D face; //Field offset: 0x18
+	private Texture2D oldFace; //Field offset: 0x20
 
-	// Token: 0x06000002 RID: 2 RVA: 0x00015DA5 File Offset: 0x00013FA5
-	public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-	{
-	}
+	public ScreamStateBehaviour() { }
 
-	// Token: 0x04000001 RID: 1
-	public Texture2D face;
+	public virtual void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-	// Token: 0x04000002 RID: 2
-	private Texture2D oldFace;
+	public virtual void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+
 }
+

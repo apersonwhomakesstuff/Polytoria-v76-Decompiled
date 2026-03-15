@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionChangedHandler : MulticastDelegate
 {
-	// Token: 0x02000230 RID: 560
-	// (Invoke) Token: 0x0600188D RID: 6285
-	public delegate void ObjectSelectionChangedHandler(ObjectSelectionChangedEventArgs args);
+
+	public ObjectSelectionChangedHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(ObjectSelectionChangedEventArgs args, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(ObjectSelectionChangedEventArgs args) { }
+
 }
+

@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoPostEnabledHandler : MulticastDelegate
 {
-	// Token: 0x02000049 RID: 73
-	// (Invoke) Token: 0x060002AE RID: 686
-	public delegate void GizmoPostEnabledHandler(Gizmo gizmo);
+
+	public GizmoPostEnabledHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(Gizmo gizmo, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(Gizmo gizmo) { }
+
 }
+

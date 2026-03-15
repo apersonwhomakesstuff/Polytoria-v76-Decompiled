@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum GizmoFillMode3D : int
 {
-	// Token: 0x02000027 RID: 39
-	public enum GizmoFillMode3D
-	{
-		// Token: 0x04000093 RID: 147
-		Filled,
-		// Token: 0x04000094 RID: 148
-		Wire
-	}
+	Filled = 0,
+	Wire = 1,
 }
+

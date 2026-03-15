@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class CameraCanProcessInputHandler : MulticastDelegate
 {
-	// Token: 0x02000112 RID: 274
-	// (Invoke) Token: 0x06000E86 RID: 3718
-	public delegate void CameraCanProcessInputHandler(YesNoAnswer answer);
+
+	public CameraCanProcessInputHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(YesNoAnswer answer) { }
+
 }
+

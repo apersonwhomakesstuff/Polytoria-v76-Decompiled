@@ -1,65 +1,43 @@
-using System;
-using Mirror;
-using Polytoria.Lua;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+[Instantiatable]
+public class NetworkEvent : Instance
 {
-	public class NetworkEvent : Instance
-	{
-		public LuaEvent InvokedServer;
-		public LuaEvent InvokedClient;
+	public LuaEvent InvokedServer; //Field offset: 0xF8
+	public LuaEvent InvokedClient; //Field offset: 0x100
 
-		public void InvokeServer(NetMessage msg)
-		{
-		}
+	private static NetworkEvent() { }
 
-		public void InvokeClient(NetMessage msg, Player player)
-		{
-		}
+	public NetworkEvent() { }
 
-		public void InvokeClients(NetMessage msg)
-		{
-		}
+	public void InvokeClient(NetMessage msg, Player player) { }
 
-		private void InvokeCmd(NetMessage msg, NetworkConnectionToClient sender = null)
-		{
-		}
+	[ClientRpc]
+	private void InvokeClientRpc(NetMessage msg) { }
 
-		private void InvokeTargetRpc(NetworkConnection target, NetMessage msg)
-		{
-		}
+	public void InvokeClients(NetMessage msg) { }
 
-		private void InvokeClientRpc(NetMessage msg)
-		{
-		}
+	[Command(requiresAuthority = False)]
+	private void InvokeCmd(NetMessage msg, NetworkConnectionToClient sender = null) { }
 
-		public override bool Weaved()
-		{
-			return false;
-		}
+	public void InvokeServer(NetMessage msg) { }
 
-		protected void UserCode_InvokeCmd__NetMessage__NetworkConnectionToClient(NetMessage msg, NetworkConnectionToClient sender)
-		{
-		}
+	[TargetRpc]
+	private void InvokeTargetRpc(NetworkConnection target, NetMessage msg) { }
 
-		protected static void InvokeUserCode_InvokeCmd__NetMessage__NetworkConnectionToClient(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection)
-		{
-		}
+	protected static void InvokeUserCode_InvokeClientRpc__NetMessage(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection) { }
 
-		protected void UserCode_InvokeTargetRpc__NetworkConnection__NetMessage(NetworkConnection target, NetMessage msg)
-		{
-		}
+	protected static void InvokeUserCode_InvokeCmd__NetMessage__NetworkConnectionToClient(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection) { }
 
-		protected static void InvokeUserCode_InvokeTargetRpc__NetworkConnection__NetMessage(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection)
-		{
-		}
+	protected static void InvokeUserCode_InvokeTargetRpc__NetworkConnection__NetMessage(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection) { }
 
-		protected void UserCode_InvokeClientRpc__NetMessage(NetMessage msg)
-		{
-		}
+	protected void UserCode_InvokeClientRpc__NetMessage(NetMessage msg) { }
 
-		protected static void InvokeUserCode_InvokeClientRpc__NetMessage(NetworkBehaviour obj, NetworkReader reader, NetworkConnectionToClient senderConnection)
-		{
-		}
-	}
+	protected void UserCode_InvokeCmd__NetMessage__NetworkConnectionToClient(NetMessage msg, NetworkConnectionToClient sender) { }
+
+	protected void UserCode_InvokeTargetRpc__NetworkConnection__NetMessage(NetworkConnection target, NetMessage msg) { }
+
+	public virtual bool Weaved() { }
+
 }
+

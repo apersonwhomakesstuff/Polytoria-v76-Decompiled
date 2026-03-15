@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionDeletedHandler : MulticastDelegate
 {
-	// Token: 0x02000232 RID: 562
-	// (Invoke) Token: 0x06001895 RID: 6293
-	public delegate void ObjectSelectionDeletedHandler();
+
+	public ObjectSelectionDeletedHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

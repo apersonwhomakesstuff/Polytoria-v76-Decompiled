@@ -1,45 +1,34 @@
-﻿using System;
-using System.Reflection;
-using UnityEngine;
+namespace Polytoria.Creator.PropertyGrid;
 
-namespace Polytoria.Creator.PropertyGrid
+public abstract class PropertyGridItem : MonoBehaviour
 {
-	// Token: 0x02000315 RID: 789
-	public abstract class PropertyGridItem : MonoBehaviour
+	[CompilerGenerated]
+	private Action<Object> PropertyChanged; //Field offset: 0x20
+	private PropertyInfo property; //Field offset: 0x28
+	protected object currentValue; //Field offset: 0x30
+	protected bool editingMultipleValues; //Field offset: 0x38
+
+	public event Action<Object> PropertyChanged
 	{
-		// Token: 0x14000052 RID: 82
-		// (add) Token: 0x0600278E RID: 10126 RVA: 0x0001C98B File Offset: 0x0001AB8B
-		// (remove) Token: 0x0600278F RID: 10127 RVA: 0x0001C98D File Offset: 0x0001AB8D
-		public event Action<object> PropertyChanged
-		{
-			add
-			{
-			}
-			remove
-			{
-			}
-		}
-
-		// Token: 0x06002790 RID: 10128 RVA: 0x0001C98F File Offset: 0x0001AB8F
-		public virtual void SetProperty(PropertyInfo property)
-		{
-		}
-
-		// Token: 0x06002791 RID: 10129
-		public abstract void SetValue(object value);
-
-		// Token: 0x06002792 RID: 10130 RVA: 0x0001C991 File Offset: 0x0001AB91
-		protected virtual void InvokeValueChanged(object value)
-		{
-		}
-
-		// Token: 0x04000D46 RID: 3398
-		private PropertyInfo property;
-
-		// Token: 0x04000D47 RID: 3399
-		protected object currentValue;
-
-		// Token: 0x04000D48 RID: 3400
-		protected bool editingMultipleValues;
+		[CompilerGenerated]
+		 add { } //Length: 172
+		[CompilerGenerated]
+		 remove { } //Length: 172
 	}
+
+	protected PropertyGridItem() { }
+
+	[CompilerGenerated]
+	public void add_PropertyChanged(Action<Object> value) { }
+
+	protected override void InvokeValueChanged(object value) { }
+
+	[CompilerGenerated]
+	public void remove_PropertyChanged(Action<Object> value) { }
+
+	public override void SetProperty(PropertyInfo property) { }
+
+	public abstract void SetValue(object value) { }
+
 }
+

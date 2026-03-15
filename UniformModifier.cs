@@ -1,30 +1,24 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI.ProceduralImage;
+//Type is in global namespace
 
-// Token: 0x02000007 RID: 7
+[ModifierID("Uniform")]
 public class UniformModifier : ProceduralImageModifier
 {
-	// Token: 0x17000004 RID: 4
-	// (get) Token: 0x06000013 RID: 19 RVA: 0x00015DDC File Offset: 0x00013FDC
-	// (set) Token: 0x06000014 RID: 20 RVA: 0x00015DE3 File Offset: 0x00013FE3
+	[SerializeField]
+	private float radius; //Field offset: 0x28
+
 	public float Radius
 	{
-		get
-		{
-			return 0f;
-		}
-		set
-		{
-		}
+		 get { } //Length: 6
+		 set { } //Length: 53
 	}
 
-	// Token: 0x06000015 RID: 21 RVA: 0x0001DDFC File Offset: 0x0001BFFC
-	public override Vector4 CalculateRadius(Rect imageRect)
-	{
-		return default(Vector4);
-	}
+	public UniformModifier() { }
 
-	// Token: 0x04000007 RID: 7
-	private float radius;
+	public virtual Vector4 CalculateRadius(Rect imageRect) { }
+
+	public float get_Radius() { }
+
+	public void set_Radius(float value) { }
+
 }
+

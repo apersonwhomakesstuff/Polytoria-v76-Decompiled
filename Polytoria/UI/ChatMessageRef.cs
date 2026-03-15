@@ -1,15 +1,11 @@
-﻿using System;
-using TMPro;
+namespace Polytoria.UI;
 
-namespace Polytoria.UI
+public class ChatMessageRef
 {
-	// Token: 0x02000250 RID: 592
-	public class ChatMessageRef
-	{
-		// Token: 0x04000951 RID: 2385
-		public TMP_Text txt;
+	public TMP_Text txt; //Field offset: 0x10
+	public bool faded; //Field offset: 0x18
 
-		// Token: 0x04000952 RID: 2386
-		public bool faded;
-	}
+	public ChatMessageRef() { }
+
 }
+

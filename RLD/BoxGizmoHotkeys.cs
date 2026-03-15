@@ -1,35 +1,27 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class BoxGizmoHotkeys : Settings
 {
-	// Token: 0x02000081 RID: 129
-	[Serializable]
-	public class BoxGizmoHotkeys : Settings
+	[SerializeField]
+	private Hotkeys _enableSnapping; //Field offset: 0x28
+	[SerializeField]
+	private Hotkeys _enableCenterPivot; //Field offset: 0x30
+
+	public Hotkeys EnableCenterPivot
 	{
-		// Token: 0x170001C2 RID: 450
-		// (get) Token: 0x06000597 RID: 1431 RVA: 0x00016B4F File Offset: 0x00014D4F
-		public Hotkeys EnableSnapping
-		{
-			get
-			{
-				return null;
-			}
-		}
-
-		// Token: 0x170001C3 RID: 451
-		// (get) Token: 0x06000598 RID: 1432 RVA: 0x00016B52 File Offset: 0x00014D52
-		public Hotkeys EnableCenterPivot
-		{
-			get
-			{
-				return null;
-			}
-		}
-
-		// Token: 0x040001DF RID: 479
-		private Hotkeys _enableSnapping;
-
-		// Token: 0x040001E0 RID: 480
-		private Hotkeys _enableCenterPivot;
+		 get { } //Length: 95
 	}
+
+	public Hotkeys EnableSnapping
+	{
+		 get { } //Length: 5
+	}
+
+	public BoxGizmoHotkeys() { }
+
+	public Hotkeys get_EnableCenterPivot() { }
+
+	public Hotkeys get_EnableSnapping() { }
+
 }
+

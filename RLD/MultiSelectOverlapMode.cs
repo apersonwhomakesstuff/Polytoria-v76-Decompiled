@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum MultiSelectOverlapMode : int
 {
-	// Token: 0x02000215 RID: 533
-	public enum MultiSelectOverlapMode
-	{
-		// Token: 0x0400085A RID: 2138
-		Partial,
-		// Token: 0x0400085B RID: 2139
-		FullOverlap
-	}
+	Partial = 0,
+	FullOverlap = 1,
 }
+

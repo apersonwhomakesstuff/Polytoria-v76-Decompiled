@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum AxisSign : int
 {
-	// Token: 0x02000142 RID: 322
-	public enum AxisSign
-	{
-		// Token: 0x0400059C RID: 1436
-		Positive,
-		// Token: 0x0400059D RID: 1437
-		Negative
-	}
+	Positive = 0,
+	Negative = 1,
 }
+

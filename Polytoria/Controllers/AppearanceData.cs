@@ -1,57 +1,25 @@
-﻿using System;
-using UnityEngine;
+namespace Polytoria.Controllers;
 
-namespace Polytoria.Controllers
+public class AppearanceData
 {
-	// Token: 0x02000324 RID: 804
-	public class AppearanceData
-	{
-		// Token: 0x06002816 RID: 10262 RVA: 0x0001CAF5 File Offset: 0x0001ACF5
-		public override bool Equals(object obj)
-		{
-			return false;
-		}
+	public Color headColor; //Field offset: 0x10
+	public Color torsoColor; //Field offset: 0x20
+	public Color leftArmColor; //Field offset: 0x30
+	public Color rightArmColor; //Field offset: 0x40
+	public Color leftLegColor; //Field offset: 0x50
+	public Color rightLegColor; //Field offset: 0x60
+	public String[] hatUrls; //Field offset: 0x70
+	public int faceID; //Field offset: 0x78
+	public int shirtID; //Field offset: 0x7C
+	public int pantsID; //Field offset: 0x80
+	public int torsoID; //Field offset: 0x84
+	public string torsoUrl; //Field offset: 0x88
 
-		// Token: 0x06002817 RID: 10263 RVA: 0x0001CAF8 File Offset: 0x0001ACF8
-		public override int GetHashCode()
-		{
-			return 0;
-		}
+	public AppearanceData() { }
 
-		// Token: 0x04000D7D RID: 3453
-		public Color headColor;
+	public virtual bool Equals(object obj) { }
 
-		// Token: 0x04000D7E RID: 3454
-		public Color torsoColor;
+	public virtual int GetHashCode() { }
 
-		// Token: 0x04000D7F RID: 3455
-		public Color leftArmColor;
-
-		// Token: 0x04000D80 RID: 3456
-		public Color rightArmColor;
-
-		// Token: 0x04000D81 RID: 3457
-		public Color leftLegColor;
-
-		// Token: 0x04000D82 RID: 3458
-		public Color rightLegColor;
-
-		// Token: 0x04000D83 RID: 3459
-		public string[] hatUrls;
-
-		// Token: 0x04000D84 RID: 3460
-		public int faceID;
-
-		// Token: 0x04000D85 RID: 3461
-		public int shirtID;
-
-		// Token: 0x04000D86 RID: 3462
-		public int pantsID;
-
-		// Token: 0x04000D87 RID: 3463
-		public int torsoID;
-
-		// Token: 0x04000D88 RID: 3464
-		public string torsoUrl;
-	}
 }
+

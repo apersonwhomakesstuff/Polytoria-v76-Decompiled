@@ -1,47 +1,22 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class GizmoCap3DControllerData
 {
-	// Token: 0x0200001A RID: 26
-	public class GizmoCap3DControllerData
-	{
-		// Token: 0x04000052 RID: 82
-		public Gizmo Gizmo;
+	public Gizmo Gizmo; //Field offset: 0x10
+	public GizmoCap3D Cap; //Field offset: 0x18
+	public GizmoHandle CapHandle; //Field offset: 0x20
+	public ConeShape3D Cone; //Field offset: 0x28
+	public PyramidShape3D Pyramid; //Field offset: 0x30
+	public BoxShape3D Box; //Field offset: 0x38
+	public SphereShape3D Sphere; //Field offset: 0x40
+	public TriangPrismShape3D TrPrism; //Field offset: 0x48
+	public int ConeIndex; //Field offset: 0x50
+	public int PyramidIndex; //Field offset: 0x54
+	public int BoxIndex; //Field offset: 0x58
+	public int SphereIndex; //Field offset: 0x5C
+	public int TrPrismIndex; //Field offset: 0x60
 
-		// Token: 0x04000053 RID: 83
-		public GizmoCap3D Cap;
+	public GizmoCap3DControllerData() { }
 
-		// Token: 0x04000054 RID: 84
-		public GizmoHandle CapHandle;
-
-		// Token: 0x04000055 RID: 85
-		public ConeShape3D Cone;
-
-		// Token: 0x04000056 RID: 86
-		public PyramidShape3D Pyramid;
-
-		// Token: 0x04000057 RID: 87
-		public BoxShape3D Box;
-
-		// Token: 0x04000058 RID: 88
-		public SphereShape3D Sphere;
-
-		// Token: 0x04000059 RID: 89
-		public TriangPrismShape3D TrPrism;
-
-		// Token: 0x0400005A RID: 90
-		public int ConeIndex;
-
-		// Token: 0x0400005B RID: 91
-		public int PyramidIndex;
-
-		// Token: 0x0400005C RID: 92
-		public int BoxIndex;
-
-		// Token: 0x0400005D RID: 93
-		public int SphereIndex;
-
-		// Token: 0x0400005E RID: 94
-		public int TrPrismIndex;
-	}
 }
+

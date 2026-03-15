@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoEngineCanDoHoverUpdateHandler : MulticastDelegate
 {
-	// Token: 0x0200006F RID: 111
-	// (Invoke) Token: 0x060004BF RID: 1215
-	public delegate void GizmoEngineCanDoHoverUpdateHandler(YesNoAnswer answer);
+
+	public GizmoEngineCanDoHoverUpdateHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(YesNoAnswer answer) { }
+
 }
+

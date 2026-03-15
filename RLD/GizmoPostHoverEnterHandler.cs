@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoPostHoverEnterHandler : MulticastDelegate
 {
-	// Token: 0x0200004E RID: 78
-	// (Invoke) Token: 0x060002C2 RID: 706
-	public delegate void GizmoPostHoverEnterHandler(Gizmo gizmo, int handleId);
+
+	public GizmoPostHoverEnterHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(Gizmo gizmo, int handleId, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(Gizmo gizmo, int handleId) { }
+
 }
+

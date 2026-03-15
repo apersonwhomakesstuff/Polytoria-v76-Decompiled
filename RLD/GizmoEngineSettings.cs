@@ -1,26 +1,21 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class GizmoEngineSettings : Settings
 {
-	// Token: 0x0200005D RID: 93
-	[Serializable]
-	public class GizmoEngineSettings : Settings
-	{
-		// Token: 0x170000DE RID: 222
-		// (get) Token: 0x06000354 RID: 852 RVA: 0x00016571 File Offset: 0x00014771
-		// (set) Token: 0x06000355 RID: 853 RVA: 0x00016574 File Offset: 0x00014774
-		public bool EnableGizmoSorting
-		{
-			get
-			{
-				return false;
-			}
-			set
-			{
-			}
-		}
+	[SerializeField]
+	private bool _enableGizmoSorting; //Field offset: 0x28
 
-		// Token: 0x04000143 RID: 323
-		private bool _enableGizmoSorting;
+	public bool EnableGizmoSorting
+	{
+		 get { } //Length: 5
+		 set { } //Length: 4
 	}
+
+	public GizmoEngineSettings() { }
+
+	public bool get_EnableGizmoSorting() { }
+
+	public void set_EnableGizmoSorting(bool value) { }
+
 }
+

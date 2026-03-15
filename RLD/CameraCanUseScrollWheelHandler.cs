@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class CameraCanUseScrollWheelHandler : MulticastDelegate
 {
-	// Token: 0x02000113 RID: 275
-	// (Invoke) Token: 0x06000E8A RID: 3722
-	public delegate void CameraCanUseScrollWheelHandler(YesNoAnswer answer);
+
+	public CameraCanUseScrollWheelHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(YesNoAnswer answer) { }
+
 }
+

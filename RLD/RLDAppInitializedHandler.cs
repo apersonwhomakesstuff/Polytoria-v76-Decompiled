@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class RLDAppInitializedHandler : MulticastDelegate
 {
-	// Token: 0x020000F2 RID: 242
-	// (Invoke) Token: 0x06000D7C RID: 3452
-	public delegate void RLDAppInitializedHandler();
+
+	public RLDAppInitializedHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

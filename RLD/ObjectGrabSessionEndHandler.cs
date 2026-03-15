@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectGrabSessionEndHandler : MulticastDelegate
 {
-	// Token: 0x020001CB RID: 459
-	// (Invoke) Token: 0x060013FA RID: 5114
-	public delegate void ObjectGrabSessionEndHandler();
+
+	public ObjectGrabSessionEndHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

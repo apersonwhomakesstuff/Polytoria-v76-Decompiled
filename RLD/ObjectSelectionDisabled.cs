@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionDisabled : MulticastDelegate
 {
-	// Token: 0x02000239 RID: 569
-	// (Invoke) Token: 0x060018B1 RID: 6321
-	public delegate void ObjectSelectionDisabled();
+
+	public ObjectSelectionDisabled(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

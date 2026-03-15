@@ -1,29 +1,14 @@
-﻿using System;
+namespace Polytoria.Controllers;
 
-namespace Polytoria.Controllers
+public struct ImageCacheKey
 {
-	// Token: 0x0200032C RID: 812
-	public struct ImageCacheKey
-	{
-		// Token: 0x06002867 RID: 10343 RVA: 0x0001CBCF File Offset: 0x0001ADCF
-		public override bool Equals(object obj)
-		{
-			return false;
-		}
+	public string id; //Field offset: 0x0
+	public string url; //Field offset: 0x8
+	public ImageType type; //Field offset: 0x10
 
-		// Token: 0x06002868 RID: 10344 RVA: 0x0001CBD2 File Offset: 0x0001ADD2
-		public override int GetHashCode()
-		{
-			return 0;
-		}
+	public virtual bool Equals(object obj) { }
 
-		// Token: 0x04000DA2 RID: 3490
-		public string id;
+	public virtual int GetHashCode() { }
 
-		// Token: 0x04000DA3 RID: 3491
-		public string url;
-
-		// Token: 0x04000DA4 RID: 3492
-		public ImageType type;
-	}
 }
+

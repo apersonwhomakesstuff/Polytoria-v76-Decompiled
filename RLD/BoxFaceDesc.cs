@@ -1,18 +1,10 @@
-﻿using System;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public struct BoxFaceDesc
 {
-	// Token: 0x0200014E RID: 334
-	public struct BoxFaceDesc
-	{
-		// Token: 0x040005C9 RID: 1481
-		public BoxFace Face;
+	public BoxFace Face; //Field offset: 0x0
+	public Plane Plane; //Field offset: 0x4
+	public Vector3 Center; //Field offset: 0x14
 
-		// Token: 0x040005CA RID: 1482
-		public Plane Plane;
-
-		// Token: 0x040005CB RID: 1483
-		public Vector3 Center;
-	}
 }
+

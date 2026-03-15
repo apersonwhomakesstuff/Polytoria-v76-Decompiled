@@ -1,9 +1,15 @@
-﻿using System;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public sealed class PrefabLibDbPrefabSpawnedHander : MulticastDelegate
 {
-	// Token: 0x0200019E RID: 414
-	// (Invoke) Token: 0x0600123E RID: 4670
-	public delegate void PrefabLibDbPrefabSpawnedHander(RTPrefab prefab, GameObject spawnedObject);
+
+	public PrefabLibDbPrefabSpawnedHander(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(RTPrefab prefab, GameObject spawnedObject, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(RTPrefab prefab, GameObject spawnedObject) { }
+
 }
+

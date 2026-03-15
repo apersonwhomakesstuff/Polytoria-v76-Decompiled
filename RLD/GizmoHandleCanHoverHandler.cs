@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoHandleCanHoverHandler : MulticastDelegate
 {
-	// Token: 0x0200005E RID: 94
-	// (Invoke) Token: 0x06000358 RID: 856
-	public delegate void GizmoHandleCanHoverHandler(int handleId, Gizmo ownerGizmo, GizmoHandleHoverData handleHoverData, YesNoAnswer answer);
+
+	public GizmoHandleCanHoverHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(int handleId, Gizmo ownerGizmo, GizmoHandleHoverData handleHoverData, YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(int handleId, Gizmo ownerGizmo, GizmoHandleHoverData handleHoverData, YesNoAnswer answer) { }
+
 }
+

@@ -1,11 +1,7 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum GizmoCircle2DBorderType : int
 {
-	// Token: 0x0200008D RID: 141
-	public enum GizmoCircle2DBorderType
-	{
-		// Token: 0x04000220 RID: 544
-		Thin
-	}
+	Thin = 0,
 }
+

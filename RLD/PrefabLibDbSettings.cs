@@ -1,26 +1,21 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class PrefabLibDbSettings
 {
-	// Token: 0x02000195 RID: 405
-	[Serializable]
-	public class PrefabLibDbSettings
-	{
-		// Token: 0x170005C6 RID: 1478
-		// (get) Token: 0x060011FB RID: 4603 RVA: 0x00018FCF File Offset: 0x000171CF
-		// (set) Token: 0x060011FC RID: 4604 RVA: 0x00018FD2 File Offset: 0x000171D2
-		public bool SpawnPrefabOnPreviewClick
-		{
-			get
-			{
-				return false;
-			}
-			set
-			{
-			}
-		}
+	[SerializeField]
+	private bool _spawnPrefabOnPreviewClick; //Field offset: 0x10
 
-		// Token: 0x04000664 RID: 1636
-		private bool _spawnPrefabOnPreviewClick;
+	public bool SpawnPrefabOnPreviewClick
+	{
+		 get { } //Length: 5
+		 set { } //Length: 4
 	}
+
+	public PrefabLibDbSettings() { }
+
+	public bool get_SpawnPrefabOnPreviewClick() { }
+
+	public void set_SpawnPrefabOnPreviewClick(bool value) { }
+
 }
+

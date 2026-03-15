@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum GizmoPolygon2DBorderType : int
 {
-	// Token: 0x02000094 RID: 148
-	public enum GizmoPolygon2DBorderType
-	{
-		// Token: 0x0400026A RID: 618
-		Thin,
-		// Token: 0x0400026B RID: 619
-		Thick
-	}
+	Thin = 0,
+	Thick = 1,
 }
+

@@ -1,17 +1,10 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum PlaneQuadrantId : int
 {
-	// Token: 0x02000148 RID: 328
-	public enum PlaneQuadrantId
-	{
-		// Token: 0x040005AF RID: 1455
-		First,
-		// Token: 0x040005B0 RID: 1456
-		Second,
-		// Token: 0x040005B1 RID: 1457
-		Third,
-		// Token: 0x040005B2 RID: 1458
-		Fourth
-	}
+	First = 0,
+	Second = 1,
+	Third = 2,
+	Fourth = 3,
 }
+

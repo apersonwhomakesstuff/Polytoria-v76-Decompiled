@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum GizmoShadeMode : int
 {
-	// Token: 0x0200002F RID: 47
-	public enum GizmoShadeMode
-	{
-		// Token: 0x040000AE RID: 174
-		Lit,
-		// Token: 0x040000AF RID: 175
-		Flat
-	}
+	Lit = 0,
+	Flat = 1,
 }
+

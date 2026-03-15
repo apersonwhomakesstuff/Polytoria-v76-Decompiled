@@ -1,9 +1,10 @@
-﻿using System;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+[AttributeUsage(AttributeTargets::Class (4))]
+public class InstantiatableAttribute : Attribute
 {
-	// Token: 0x02000285 RID: 645
-	public class InstantiatableAttribute : Attribute
-	{
-	}
+
+	public InstantiatableAttribute() { }
+
 }
+

@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class RedoEndHandler : MulticastDelegate
 {
-	// Token: 0x020001FC RID: 508
-	// (Invoke) Token: 0x06001762 RID: 5986
-	public delegate void RedoEndHandler(IUndoRedoAction action);
+
+	public RedoEndHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(IUndoRedoAction action, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(IUndoRedoAction action) { }
+
 }
+

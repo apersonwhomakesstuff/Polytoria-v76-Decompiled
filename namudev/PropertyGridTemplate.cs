@@ -1,22 +1,18 @@
-﻿using System;
-using UnityEngine;
+namespace namudev;
 
-namespace namudev
+public class PropertyGridTemplate : MonoBehaviour
 {
-	// Token: 0x0200024B RID: 587
-	public class PropertyGridTemplate : MonoBehaviour
-	{
-		// Token: 0x1700088A RID: 2186
-		// (get) Token: 0x060019B0 RID: 6576 RVA: 0x0001A305 File Offset: 0x00018505
-		public string Type
-		{
-			get
-			{
-				return null;
-			}
-		}
+	[SerializeField]
+	private string type; //Field offset: 0x20
 
-		// Token: 0x04000940 RID: 2368
-		private string type;
+	public string Type
+	{
+		 get { } //Length: 5
 	}
+
+	public PropertyGridTemplate() { }
+
+	public string get_Type() { }
+
 }
+

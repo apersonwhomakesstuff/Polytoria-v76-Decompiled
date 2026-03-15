@@ -1,23 +1,15 @@
-﻿using System;
-using Polytoria.Lua;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+[Instantiatable]
+public class Signal : Instance
 {
-	// Token: 0x020002AA RID: 682
-	public class Signal : Instance
-	{
-		// Token: 0x06002106 RID: 8454 RVA: 0x0001B731 File Offset: 0x00019931
-		public void Invoke(object[] par)
-		{
-		}
+	public LuaEvent Invoked; //Field offset: 0xF8
 
-		// Token: 0x06002108 RID: 8456 RVA: 0x0001B73B File Offset: 0x0001993B
-		public override bool Weaved()
-		{
-			return false;
-		}
+	public Signal() { }
 
-		// Token: 0x04000BF0 RID: 3056
-		public LuaEvent Invoked;
-	}
+	public void Invoke(Object[] par) { }
+
+	public virtual bool Weaved() { }
+
 }
+

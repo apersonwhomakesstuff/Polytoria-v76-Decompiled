@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class CameraProjectionSwitchEndHandler : MulticastDelegate
 {
-	// Token: 0x02000106 RID: 262
-	// (Invoke) Token: 0x06000E15 RID: 3605
-	public delegate void CameraProjectionSwitchEndHandler(CameraPrjSwitchTransition.Type transitionType);
+
+	public CameraProjectionSwitchEndHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(Type transitionType, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(Type transitionType) { }
+
 }
+

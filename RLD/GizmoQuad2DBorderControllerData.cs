@@ -1,29 +1,16 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class GizmoQuad2DBorderControllerData
 {
-	// Token: 0x020000BD RID: 189
-	public class GizmoQuad2DBorderControllerData
-	{
-		// Token: 0x04000338 RID: 824
-		public Gizmo Gizmo;
+	public Gizmo Gizmo; //Field offset: 0x10
+	public GizmoPlaneSlider2D PlaneSlider; //Field offset: 0x18
+	public GizmoQuad2DBorder Border; //Field offset: 0x20
+	public GizmoHandle TargetHandle; //Field offset: 0x28
+	public QuadShape2D TargetQuad; //Field offset: 0x30
+	public QuadShape2D BorderQuad; //Field offset: 0x38
+	public int BorderQuadIndex; //Field offset: 0x40
 
-		// Token: 0x04000339 RID: 825
-		public GizmoPlaneSlider2D PlaneSlider;
+	public GizmoQuad2DBorderControllerData() { }
 
-		// Token: 0x0400033A RID: 826
-		public GizmoQuad2DBorder Border;
-
-		// Token: 0x0400033B RID: 827
-		public GizmoHandle TargetHandle;
-
-		// Token: 0x0400033C RID: 828
-		public QuadShape2D TargetQuad;
-
-		// Token: 0x0400033D RID: 829
-		public QuadShape2D BorderQuad;
-
-		// Token: 0x0400033E RID: 830
-		public int BorderQuadIndex;
-	}
 }
+

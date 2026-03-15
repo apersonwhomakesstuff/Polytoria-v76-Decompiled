@@ -1,16 +1,11 @@
-﻿using System;
+namespace Polytoria.Datamodel.Proxies;
 
-namespace Polytoria.Datamodel.Proxies
+public class ModuleScriptProxy : BaseScriptProxy
 {
-	// Token: 0x020002E5 RID: 741
-	public class ModuleScriptProxy : BaseScriptProxy
-	{
-		// Token: 0x06002538 RID: 9528 RVA: 0x0001C287 File Offset: 0x0001A487
-		public ModuleScriptProxy(ModuleScript target) : base(null)
-		{
-		}
+	private readonly ModuleScript moduleScript; //Field offset: 0x20
 
-		// Token: 0x04000D11 RID: 3345
-		private readonly ModuleScript moduleScript;
-	}
+	[MoonSharpHidden]
+	public ModuleScriptProxy(ModuleScript target) { }
+
 }
+

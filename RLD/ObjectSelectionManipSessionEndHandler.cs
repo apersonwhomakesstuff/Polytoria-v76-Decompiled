@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionManipSessionEndHandler : MulticastDelegate
 {
-	// Token: 0x0200022D RID: 557
-	// (Invoke) Token: 0x06001881 RID: 6273
-	public delegate void ObjectSelectionManipSessionEndHandler(ObjectSelectionManipSession session);
+
+	public ObjectSelectionManipSessionEndHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(ObjectSelectionManipSession session, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(ObjectSelectionManipSession session) { }
+
 }
+

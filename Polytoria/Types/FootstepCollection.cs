@@ -1,22 +1,14 @@
-﻿using System;
-using Polytoria.Datamodel;
-using UnityEngine;
+namespace Polytoria.Types;
 
-namespace Polytoria.Types
+[CreateAssetMenu(fileName = "FootstepCollection", menuName = "Polytoria/FootstepCollection")]
+public class FootstepCollection : ScriptableObject
 {
-	// Token: 0x0200025A RID: 602
-	public class FootstepCollection : ScriptableObject
-	{
-		// Token: 0x06001A03 RID: 6659 RVA: 0x0001A402 File Offset: 0x00018602
-		public FootstepSounds GetSounds(PartMaterial partMaterial)
-		{
-			return null;
-		}
+	public FootstepSounds fallback; //Field offset: 0x18
+	public FootstepMaterial[] sounds; //Field offset: 0x20
 
-		// Token: 0x04000995 RID: 2453
-		public FootstepSounds fallback;
+	public FootstepCollection() { }
 
-		// Token: 0x04000996 RID: 2454
-		public FootstepMaterial[] sounds;
-	}
+	public FootstepSounds GetSounds(PartMaterial partMaterial) { }
+
 }
+

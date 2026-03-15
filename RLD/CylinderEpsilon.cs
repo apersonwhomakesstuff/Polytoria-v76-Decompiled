@@ -1,42 +1,29 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public struct CylinderEpsilon
 {
-	// Token: 0x0200015A RID: 346
-	public struct CylinderEpsilon
+	private float _hrzEps; //Field offset: 0x0
+	private float _vertEps; //Field offset: 0x4
+
+	public float RadiusEps
 	{
-		// Token: 0x1700057C RID: 1404
-		// (get) Token: 0x060010E4 RID: 4324 RVA: 0x00018BBE File Offset: 0x00016DBE
-		// (set) Token: 0x060010E5 RID: 4325 RVA: 0x00018BC5 File Offset: 0x00016DC5
-		public float RadiusEps
-		{
-			get
-			{
-				return 0f;
-			}
-			set
-			{
-			}
-		}
-
-		// Token: 0x1700057D RID: 1405
-		// (get) Token: 0x060010E6 RID: 4326 RVA: 0x00018BC7 File Offset: 0x00016DC7
-		// (set) Token: 0x060010E7 RID: 4327 RVA: 0x00018BCE File Offset: 0x00016DCE
-		public float VertEps
-		{
-			get
-			{
-				return 0f;
-			}
-			set
-			{
-			}
-		}
-
-		// Token: 0x040005E1 RID: 1505
-		private float _hrzEps;
-
-		// Token: 0x040005E2 RID: 1506
-		private float _vertEps;
+		 get { } //Length: 5
+		 set { } //Length: 12
 	}
+
+	public float VertEps
+	{
+		 get { } //Length: 6
+		 set { } //Length: 13
+	}
+
+	public float get_RadiusEps() { }
+
+	public float get_VertEps() { }
+
+	public void set_RadiusEps(float value) { }
+
+	public void set_VertEps(float value) { }
+
 }
+

@@ -1,9 +1,7 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public interface IRLDApplication
 {
-	// Token: 0x020000F4 RID: 244
-	public interface IRLDApplication
-	{
-	}
+
 }
+

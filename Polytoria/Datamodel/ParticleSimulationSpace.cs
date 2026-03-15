@@ -1,13 +1,8 @@
-﻿using System;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+public enum ParticleSimulationSpace : int
 {
-	// Token: 0x0200029C RID: 668
-	public enum ParticleSimulationSpace
-	{
-		// Token: 0x04000B5D RID: 2909
-		Local,
-		// Token: 0x04000B5E RID: 2910
-		World
-	}
+	Local = 0,
+	World = 1,
 }
+

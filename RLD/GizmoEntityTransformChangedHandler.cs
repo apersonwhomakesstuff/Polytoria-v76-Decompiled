@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoEntityTransformChangedHandler : MulticastDelegate
 {
-	// Token: 0x02000032 RID: 50
-	// (Invoke) Token: 0x06000172 RID: 370
-	public delegate void GizmoEntityTransformChangedHandler(GizmoTransform transform, GizmoTransform.ChangeData changeData);
+
+	public GizmoEntityTransformChangedHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(GizmoTransform transform, ChangeData changeData, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(GizmoTransform transform, ChangeData changeData) { }
+
 }
+

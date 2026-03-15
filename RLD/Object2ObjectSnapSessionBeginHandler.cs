@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class Object2ObjectSnapSessionBeginHandler : MulticastDelegate
 {
-	// Token: 0x020001C4 RID: 452
-	// (Invoke) Token: 0x060013B8 RID: 5048
-	public delegate void Object2ObjectSnapSessionBeginHandler();
+
+	public Object2ObjectSnapSessionBeginHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

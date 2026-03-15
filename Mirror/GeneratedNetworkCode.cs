@@ -1,407 +1,182 @@
-using System;
-using System.Runtime.InteropServices;
-using Mirror.Discovery;
-using Polytoria.Controllers;
-using Polytoria.Datamodel;
-using Polytoria.Networking;
-using Polytoria.Types;
-using TMPro;
-using UnityEngine;
+namespace Mirror;
 
-namespace Mirror
+public static class GeneratedNetworkCode
 {
-	[StructLayout(3, CharSet = CharSet.Auto)]
-	public static class GeneratedNetworkCode
-	{
-		public static TimeSnapshotMessage TimeSnapshotMessage(NetworkReader reader)
-		{
-			return default(TimeSnapshotMessage);
-		}
-
-		public static void TimeSnapshotMessage(NetworkWriter writer, TimeSnapshotMessage value)
-		{
-		}
-
-		public static ReadyMessage ReadyMessage(NetworkReader reader)
-		{
-			return default(ReadyMessage);
-		}
-
-		public static void ReadyMessage(NetworkWriter writer, ReadyMessage value)
-		{
-		}
-
-		public static NotReadyMessage NotReadyMessage(NetworkReader reader)
-		{
-			return default(NotReadyMessage);
-		}
-
-		public static void NotReadyMessage(NetworkWriter writer, NotReadyMessage value)
-		{
-		}
-
-		public static AddPlayerMessage AddPlayerMessage(NetworkReader reader)
-		{
-			return default(AddPlayerMessage);
-		}
-
-		public static void AddPlayerMessage(NetworkWriter writer, AddPlayerMessage value)
-		{
-		}
-
-		public static SceneMessage SceneMessage(NetworkReader reader)
-		{
-			return default(SceneMessage);
-		}
-
-		public static SceneOperation SceneOperation(NetworkReader reader)
-		{
-			return SceneOperation.Normal;
-		}
-
-		public static void SceneMessage(NetworkWriter writer, SceneMessage value)
-		{
-		}
-
-		public static void SceneOperation(NetworkWriter writer, SceneOperation value)
-		{
-		}
-
-		public static CommandMessage CommandMessage(NetworkReader reader)
-		{
-			return default(CommandMessage);
-		}
-
-		public static void CommandMessage(NetworkWriter writer, CommandMessage value)
-		{
-		}
-
-		public static RpcMessage RpcMessage(NetworkReader reader)
-		{
-			return default(RpcMessage);
-		}
-
-		public static void RpcMessage(NetworkWriter writer, RpcMessage value)
-		{
-		}
-
-		public static SpawnMessage SpawnMessage(NetworkReader reader)
-		{
-			return default(SpawnMessage);
-		}
-
-		public static SpawnFlags SpawnFlags(NetworkReader reader)
-		{
-			return SpawnFlags.None;
-		}
-
-		public static void SpawnMessage(NetworkWriter writer, SpawnMessage value)
-		{
-		}
-
-		public static void SpawnFlags(NetworkWriter writer, SpawnFlags value)
-		{
-		}
-
-		public static ChangeOwnerMessage ChangeOwnerMessage(NetworkReader reader)
-		{
-			return default(ChangeOwnerMessage);
-		}
-
-		public static void ChangeOwnerMessage(NetworkWriter writer, ChangeOwnerMessage value)
-		{
-		}
-
-		public static ObjectSpawnStartedMessage ObjectSpawnStartedMessage(NetworkReader reader)
-		{
-			return default(ObjectSpawnStartedMessage);
-		}
-
-		public static void ObjectSpawnStartedMessage(NetworkWriter writer, ObjectSpawnStartedMessage value)
-		{
-		}
-
-		public static ObjectSpawnFinishedMessage ObjectSpawnFinishedMessage(NetworkReader reader)
-		{
-			return default(ObjectSpawnFinishedMessage);
-		}
-
-		public static void ObjectSpawnFinishedMessage(NetworkWriter writer, ObjectSpawnFinishedMessage value)
-		{
-		}
-
-		public static ObjectDestroyMessage ObjectDestroyMessage(NetworkReader reader)
-		{
-			return default(ObjectDestroyMessage);
-		}
-
-		public static void ObjectDestroyMessage(NetworkWriter writer, ObjectDestroyMessage value)
-		{
-		}
-
-		public static ObjectHideMessage ObjectHideMessage(NetworkReader reader)
-		{
-			return default(ObjectHideMessage);
-		}
-
-		public static void ObjectHideMessage(NetworkWriter writer, ObjectHideMessage value)
-		{
-		}
-
-		public static EntityStateMessage EntityStateMessage(NetworkReader reader)
-		{
-			return default(EntityStateMessage);
-		}
-
-		public static void EntityStateMessage(NetworkWriter writer, EntityStateMessage value)
-		{
-		}
-
-		public static NetworkPingMessage NetworkPingMessage(NetworkReader reader)
-		{
-			return default(NetworkPingMessage);
-		}
-
-		public static void NetworkPingMessage(NetworkWriter writer, NetworkPingMessage value)
-		{
-		}
-
-		public static NetworkPongMessage NetworkPongMessage(NetworkReader reader)
-		{
-			return default(NetworkPongMessage);
-		}
-
-		public static void NetworkPongMessage(NetworkWriter writer, NetworkPongMessage value)
-		{
-		}
-
-		public static ServerRequest ServerRequest(NetworkReader reader)
-		{
-			return default(ServerRequest);
-		}
-
-		public static void ServerRequest(NetworkWriter writer, ServerRequest value)
-		{
-		}
-
-		public static ServerResponse ServerResponse(NetworkReader reader)
-		{
-			return default(ServerResponse);
-		}
-
-		public static void ServerResponse(NetworkWriter writer, ServerResponse value)
-		{
-		}
-
-		public static PTAuthenticator.AuthRequestMessage PTAuthenticator/AuthRequestMessage(NetworkReader reader)
-		{
-			return default(PTAuthenticator.AuthRequestMessage);
-		}
-
-		public static void PTAuthenticator/AuthRequestMessage(NetworkWriter writer, PTAuthenticator.AuthRequestMessage value)
-		{
-		}
-
-		public static PTAuthenticator.AuthResponseMessage PTAuthenticator/AuthResponseMessage(NetworkReader reader)
-		{
-			return default(PTAuthenticator.AuthResponseMessage);
-		}
-
-		public static void PTAuthenticator/AuthResponseMessage(NetworkWriter writer, PTAuthenticator.AuthResponseMessage value)
-		{
-		}
-
-		public static void PartShape(NetworkWriter writer, PartShape value)
-		{
-		}
-
-		public static PartShape PartShape(NetworkReader reader)
-		{
-			return PartShape.Brick;
-		}
-
-		public static void PartMaterial(NetworkWriter writer, PartMaterial value)
-		{
-		}
-
-		public static PartMaterial PartMaterial(NetworkReader reader)
-		{
-			return PartMaterial.SmoothPlastic;
-		}
-
-		public static void PhysicsMaterialCombine(NetworkWriter writer, PhysicsMaterialCombine value)
-		{
-		}
-
-		public static PhysicsMaterialCombine PhysicsMaterialCombine(NetworkReader reader)
-		{
-			return PhysicsMaterialCombine.Average;
-		}
-
-		public static void ImageType(NetworkWriter writer, ImageType value)
-		{
-		}
-
-		public static ImageType ImageType(NetworkReader reader)
-		{
-			return ImageType.Asset;
-		}
-
-		public static void SkyboxPreset(NetworkWriter writer, SkyboxPreset value)
-		{
-		}
-
-		public static SkyboxPreset SkyboxPreset(NetworkReader reader)
-		{
-			return SkyboxPreset.Day1;
-		}
-
-		public static void ImageSky/SkyboxSide(NetworkWriter writer, ImageSky.SkyboxSide value)
-		{
-		}
-
-		public static ImageSky.SkyboxSide ImageSky/SkyboxSide(NetworkReader reader)
-		{
-			return ImageSky.SkyboxSide.Top;
-		}
-
-		public static void AmbientSource(NetworkWriter writer, AmbientSource value)
-		{
-		}
-
-		public static AmbientSource AmbientSource(NetworkReader reader)
-		{
-			return AmbientSource.Skybox;
-		}
-
-		public static void CollisionType(NetworkWriter writer, CollisionType value)
-		{
-		}
-
-		public static CollisionType CollisionType(NetworkReader reader)
-		{
-			return CollisionType.Bounds;
-		}
-
-		public static void ColorRange(NetworkWriter writer, ColorRange value)
-		{
-		}
-
-		public static void ParticleColorMode(NetworkWriter writer, ParticleColorMode value)
-		{
-		}
-
-		public static void NumberRange(NetworkWriter writer, NumberRange value)
-		{
-		}
-
-		public static void ParticleSimulationSpace(NetworkWriter writer, ParticleSimulationSpace value)
-		{
-		}
-
-		public static void ParticleShape(NetworkWriter writer, ParticleShape value)
-		{
-		}
-
-		public static ColorRange ColorRange(NetworkReader reader)
-		{
-			return default(ColorRange);
-		}
-
-		public static ParticleColorMode ParticleColorMode(NetworkReader reader)
-		{
-			return ParticleColorMode.Multiply;
-		}
-
-		public static NumberRange NumberRange(NetworkReader reader)
-		{
-			return default(NumberRange);
-		}
-
-		public static ParticleSimulationSpace ParticleSimulationSpace(NetworkReader reader)
-		{
-			return ParticleSimulationSpace.Local;
-		}
-
-		public static ParticleShape ParticleShape(NetworkReader reader)
-		{
-			return ParticleShape.Sphere;
-		}
-
-		public static void BodyPart(NetworkWriter writer, BodyPart value)
-		{
-		}
-
-		public static BodyPart BodyPart(NetworkReader reader)
-		{
-			return BodyPart.Head;
-		}
-
-		public static void HorizontalAlignmentOptions(NetworkWriter writer, HorizontalAlignmentOptions value)
-		{
-		}
-
-		public static HorizontalAlignmentOptions HorizontalAlignmentOptions(NetworkReader reader)
-		{
-			return (HorizontalAlignmentOptions)0;
-		}
-
-		public static void VerticalAlignmentOptions(NetworkWriter writer, VerticalAlignmentOptions value)
-		{
-		}
-
-		public static VerticalAlignmentOptions VerticalAlignmentOptions(NetworkReader reader)
-		{
-			return (VerticalAlignmentOptions)0;
-		}
-
-		public static void TextFontPreset(NetworkWriter writer, TextFontPreset value)
-		{
-		}
-
-		public static TextFontPreset TextFontPreset(NetworkReader reader)
-		{
-			return TextFontPreset.SourceSans;
-		}
-
-		public static void TextJustify(NetworkWriter writer, TextJustify value)
-		{
-		}
-
-		public static void TextVerticalAlign(NetworkWriter writer, TextVerticalAlign value)
-		{
-		}
-
-		public static TextJustify TextJustify(NetworkReader reader)
-		{
-			return TextJustify.Left;
-		}
-
-		public static TextVerticalAlign TextVerticalAlign(NetworkReader reader)
-		{
-			return TextVerticalAlign.Top;
-		}
-
-		public static void TextAnchor(NetworkWriter writer, TextAnchor value)
-		{
-		}
-
-		public static TextAnchor TextAnchor(NetworkReader reader)
-		{
-			return TextAnchor.UpperLeft;
-		}
-
-		public static void String[](NetworkWriter writer, string[] value)
-		{
-		}
-
-		public static string[] String[](NetworkReader reader)
-		{
-			return null;
-		}
-
-		public static void InitReadWriters()
-		{
-		}
-	}
+
+	public static AddPlayerMessage _Read_Mirror.AddPlayerMessage(NetworkReader reader) { }
+
+	public static ChangeOwnerMessage _Read_Mirror.ChangeOwnerMessage(NetworkReader reader) { }
+
+	public static CommandMessage _Read_Mirror.CommandMessage(NetworkReader reader) { }
+
+	public static ServerRequest _Read_Mirror.Discovery.ServerRequest(NetworkReader reader) { }
+
+	public static ServerResponse _Read_Mirror.Discovery.ServerResponse(NetworkReader reader) { }
+
+	public static EntityStateMessage _Read_Mirror.EntityStateMessage(NetworkReader reader) { }
+
+	public static NetworkPingMessage _Read_Mirror.NetworkPingMessage(NetworkReader reader) { }
+
+	public static NetworkPongMessage _Read_Mirror.NetworkPongMessage(NetworkReader reader) { }
+
+	public static NotReadyMessage _Read_Mirror.NotReadyMessage(NetworkReader reader) { }
+
+	public static ObjectDestroyMessage _Read_Mirror.ObjectDestroyMessage(NetworkReader reader) { }
+
+	public static ObjectHideMessage _Read_Mirror.ObjectHideMessage(NetworkReader reader) { }
+
+	public static ObjectSpawnFinishedMessage _Read_Mirror.ObjectSpawnFinishedMessage(NetworkReader reader) { }
+
+	public static ObjectSpawnStartedMessage _Read_Mirror.ObjectSpawnStartedMessage(NetworkReader reader) { }
+
+	public static ReadyMessage _Read_Mirror.ReadyMessage(NetworkReader reader) { }
+
+	public static RpcMessage _Read_Mirror.RpcMessage(NetworkReader reader) { }
+
+	public static SceneMessage _Read_Mirror.SceneMessage(NetworkReader reader) { }
+
+	public static SceneOperation _Read_Mirror.SceneOperation(NetworkReader reader) { }
+
+	public static SpawnFlags _Read_Mirror.SpawnFlags(NetworkReader reader) { }
+
+	public static SpawnMessage _Read_Mirror.SpawnMessage(NetworkReader reader) { }
+
+	public static TimeSnapshotMessage _Read_Mirror.TimeSnapshotMessage(NetworkReader reader) { }
+
+	public static ImageType _Read_Polytoria.Controllers.ImageType(NetworkReader reader) { }
+
+	public static AmbientSource _Read_Polytoria.Datamodel.AmbientSource(NetworkReader reader) { }
+
+	public static BodyPart _Read_Polytoria.Datamodel.BodyPart(NetworkReader reader) { }
+
+	public static CollisionType _Read_Polytoria.Datamodel.CollisionType(NetworkReader reader) { }
+
+	public static SkyboxSide _Read_Polytoria.Datamodel.ImageSky/SkyboxSide(NetworkReader reader) { }
+
+	public static ParticleColorMode _Read_Polytoria.Datamodel.ParticleColorMode(NetworkReader reader) { }
+
+	public static ParticleShape _Read_Polytoria.Datamodel.ParticleShape(NetworkReader reader) { }
+
+	public static ParticleSimulationSpace _Read_Polytoria.Datamodel.ParticleSimulationSpace(NetworkReader reader) { }
+
+	public static PartMaterial _Read_Polytoria.Datamodel.PartMaterial(NetworkReader reader) { }
+
+	public static PartShape _Read_Polytoria.Datamodel.PartShape(NetworkReader reader) { }
+
+	public static SkyboxPreset _Read_Polytoria.Datamodel.SkyboxPreset(NetworkReader reader) { }
+
+	public static TextFontPreset _Read_Polytoria.Datamodel.TextFontPreset(NetworkReader reader) { }
+
+	public static TextJustify _Read_Polytoria.Datamodel.TextJustify(NetworkReader reader) { }
+
+	public static TextVerticalAlign _Read_Polytoria.Datamodel.TextVerticalAlign(NetworkReader reader) { }
+
+	public static AuthRequestMessage _Read_Polytoria.Networking.PTAuthenticator/AuthRequestMessage(NetworkReader reader) { }
+
+	public static AuthResponseMessage _Read_Polytoria.Networking.PTAuthenticator/AuthResponseMessage(NetworkReader reader) { }
+
+	public static ColorRange _Read_Polytoria.Types.ColorRange(NetworkReader reader) { }
+
+	public static NumberRange _Read_Polytoria.Types.NumberRange(NetworkReader reader) { }
+
+	public static String[] _Read_System.String[](NetworkReader reader) { }
+
+	public static HorizontalAlignmentOptions _Read_TMPro.HorizontalAlignmentOptions(NetworkReader reader) { }
+
+	public static VerticalAlignmentOptions _Read_TMPro.VerticalAlignmentOptions(NetworkReader reader) { }
+
+	public static PhysicsMaterialCombine _Read_UnityEngine.PhysicsMaterialCombine(NetworkReader reader) { }
+
+	public static TextAnchor _Read_UnityEngine.TextAnchor(NetworkReader reader) { }
+
+	public static void _Write_Mirror.AddPlayerMessage(NetworkWriter writer, AddPlayerMessage value) { }
+
+	public static void _Write_Mirror.ChangeOwnerMessage(NetworkWriter writer, ChangeOwnerMessage value) { }
+
+	public static void _Write_Mirror.CommandMessage(NetworkWriter writer, CommandMessage value) { }
+
+	public static void _Write_Mirror.Discovery.ServerRequest(NetworkWriter writer, ServerRequest value) { }
+
+	public static void _Write_Mirror.Discovery.ServerResponse(NetworkWriter writer, ServerResponse value) { }
+
+	public static void _Write_Mirror.EntityStateMessage(NetworkWriter writer, EntityStateMessage value) { }
+
+	public static void _Write_Mirror.NetworkPingMessage(NetworkWriter writer, NetworkPingMessage value) { }
+
+	public static void _Write_Mirror.NetworkPongMessage(NetworkWriter writer, NetworkPongMessage value) { }
+
+	public static void _Write_Mirror.NotReadyMessage(NetworkWriter writer, NotReadyMessage value) { }
+
+	public static void _Write_Mirror.ObjectDestroyMessage(NetworkWriter writer, ObjectDestroyMessage value) { }
+
+	public static void _Write_Mirror.ObjectHideMessage(NetworkWriter writer, ObjectHideMessage value) { }
+
+	public static void _Write_Mirror.ObjectSpawnFinishedMessage(NetworkWriter writer, ObjectSpawnFinishedMessage value) { }
+
+	public static void _Write_Mirror.ObjectSpawnStartedMessage(NetworkWriter writer, ObjectSpawnStartedMessage value) { }
+
+	public static void _Write_Mirror.ReadyMessage(NetworkWriter writer, ReadyMessage value) { }
+
+	public static void _Write_Mirror.RpcMessage(NetworkWriter writer, RpcMessage value) { }
+
+	public static void _Write_Mirror.SceneMessage(NetworkWriter writer, SceneMessage value) { }
+
+	public static void _Write_Mirror.SceneOperation(NetworkWriter writer, SceneOperation value) { }
+
+	public static void _Write_Mirror.SpawnFlags(NetworkWriter writer, SpawnFlags value) { }
+
+	public static void _Write_Mirror.SpawnMessage(NetworkWriter writer, SpawnMessage value) { }
+
+	public static void _Write_Mirror.TimeSnapshotMessage(NetworkWriter writer, TimeSnapshotMessage value) { }
+
+	public static void _Write_Polytoria.Controllers.ImageType(NetworkWriter writer, ImageType value) { }
+
+	public static void _Write_Polytoria.Datamodel.AmbientSource(NetworkWriter writer, AmbientSource value) { }
+
+	public static void _Write_Polytoria.Datamodel.BodyPart(NetworkWriter writer, BodyPart value) { }
+
+	public static void _Write_Polytoria.Datamodel.CollisionType(NetworkWriter writer, CollisionType value) { }
+
+	public static void _Write_Polytoria.Datamodel.ImageSky/SkyboxSide(NetworkWriter writer, SkyboxSide value) { }
+
+	public static void _Write_Polytoria.Datamodel.ParticleColorMode(NetworkWriter writer, ParticleColorMode value) { }
+
+	public static void _Write_Polytoria.Datamodel.ParticleShape(NetworkWriter writer, ParticleShape value) { }
+
+	public static void _Write_Polytoria.Datamodel.ParticleSimulationSpace(NetworkWriter writer, ParticleSimulationSpace value) { }
+
+	public static void _Write_Polytoria.Datamodel.PartMaterial(NetworkWriter writer, PartMaterial value) { }
+
+	public static void _Write_Polytoria.Datamodel.PartShape(NetworkWriter writer, PartShape value) { }
+
+	public static void _Write_Polytoria.Datamodel.SkyboxPreset(NetworkWriter writer, SkyboxPreset value) { }
+
+	public static void _Write_Polytoria.Datamodel.TextFontPreset(NetworkWriter writer, TextFontPreset value) { }
+
+	public static void _Write_Polytoria.Datamodel.TextJustify(NetworkWriter writer, TextJustify value) { }
+
+	public static void _Write_Polytoria.Datamodel.TextVerticalAlign(NetworkWriter writer, TextVerticalAlign value) { }
+
+	public static void _Write_Polytoria.Networking.PTAuthenticator/AuthRequestMessage(NetworkWriter writer, AuthRequestMessage value) { }
+
+	public static void _Write_Polytoria.Networking.PTAuthenticator/AuthResponseMessage(NetworkWriter writer, AuthResponseMessage value) { }
+
+	public static void _Write_Polytoria.Types.ColorRange(NetworkWriter writer, ColorRange value) { }
+
+	public static void _Write_Polytoria.Types.NumberRange(NetworkWriter writer, NumberRange value) { }
+
+	public static void _Write_System.String[](NetworkWriter writer, String[] value) { }
+
+	public static void _Write_TMPro.HorizontalAlignmentOptions(NetworkWriter writer, HorizontalAlignmentOptions value) { }
+
+	public static void _Write_TMPro.VerticalAlignmentOptions(NetworkWriter writer, VerticalAlignmentOptions value) { }
+
+	public static void _Write_UnityEngine.PhysicsMaterialCombine(NetworkWriter writer, PhysicsMaterialCombine value) { }
+
+	public static void _Write_UnityEngine.TextAnchor(NetworkWriter writer, TextAnchor value) { }
+
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType::BeforeSceneLoad (1))]
+	public static void InitReadWriters() { }
+
 }
+

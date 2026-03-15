@@ -1,18 +1,12 @@
-﻿using System;
+namespace Polytoria.Datamodel.Services;
 
-namespace Polytoria.Datamodel.Services
+public class ProfanityFilterData
 {
-	// Token: 0x020002C7 RID: 711
-	[Serializable]
-	public class ProfanityFilterData
-	{
-		// Token: 0x04000CE1 RID: 3297
-		public int id;
+	public int id; //Field offset: 0x10
+	public string content; //Field offset: 0x18
+	public bool isRegex; //Field offset: 0x20
 
-		// Token: 0x04000CE2 RID: 3298
-		public string content;
+	public ProfanityFilterData() { }
 
-		// Token: 0x04000CE3 RID: 3299
-		public bool isRegex;
-	}
 }
+

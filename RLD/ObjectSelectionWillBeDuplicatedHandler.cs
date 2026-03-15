@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionWillBeDuplicatedHandler : MulticastDelegate
 {
-	// Token: 0x02000233 RID: 563
-	// (Invoke) Token: 0x06001899 RID: 6297
-	public delegate void ObjectSelectionWillBeDuplicatedHandler();
+
+	public ObjectSelectionWillBeDuplicatedHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke() { }
+
 }
+

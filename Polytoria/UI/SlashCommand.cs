@@ -1,21 +1,13 @@
-﻿using System;
+namespace Polytoria.UI;
 
-namespace Polytoria.UI
+public class SlashCommand
 {
-	// Token: 0x02000254 RID: 596
-	[Serializable]
-	public class SlashCommand
-	{
-		// Token: 0x04000967 RID: 2407
-		public int Icon;
+	public int Icon; //Field offset: 0x10
+	public string CommandName; //Field offset: 0x18
+	public String[] Args; //Field offset: 0x20
+	public string Description; //Field offset: 0x28
 
-		// Token: 0x04000968 RID: 2408
-		public string CommandName;
+	public SlashCommand() { }
 
-		// Token: 0x04000969 RID: 2409
-		public string[] Args;
-
-		// Token: 0x0400096A RID: 2410
-		public string Description;
-	}
 }
+

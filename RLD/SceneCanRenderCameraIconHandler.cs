@@ -1,9 +1,15 @@
-﻿using System;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public sealed class SceneCanRenderCameraIconHandler : MulticastDelegate
 {
-	// Token: 0x020001B6 RID: 438
-	// (Invoke) Token: 0x0600133D RID: 4925
-	public delegate void SceneCanRenderCameraIconHandler(Camera camera, YesNoAnswer answer);
+
+	public SceneCanRenderCameraIconHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(Camera camera, YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(Camera camera, YesNoAnswer answer) { }
+
 }
+

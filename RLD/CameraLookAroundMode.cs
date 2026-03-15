@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum CameraLookAroundMode : int
 {
-	// Token: 0x020000FD RID: 253
-	public enum CameraLookAroundMode
-	{
-		// Token: 0x040004CF RID: 1231
-		Standard,
-		// Token: 0x040004D0 RID: 1232
-		Smooth
-	}
+	Standard = 0,
+	Smooth = 1,
 }
+

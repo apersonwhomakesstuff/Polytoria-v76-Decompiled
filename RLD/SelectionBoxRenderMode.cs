@@ -1,15 +1,9 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum SelectionBoxRenderMode : int
 {
-	// Token: 0x0200021F RID: 543
-	public enum SelectionBoxRenderMode
-	{
-		// Token: 0x0400087A RID: 2170
-		PerObject,
-		// Token: 0x0400087B RID: 2171
-		FromParentToBottom,
-		// Token: 0x0400087C RID: 2172
-		SelectionVolume
-	}
+	PerObject = 0,
+	FromParentToBottom = 1,
+	SelectionVolume = 2,
 }
+

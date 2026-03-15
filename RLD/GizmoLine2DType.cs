@@ -1,13 +1,8 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum GizmoLine2DType : int
 {
-	// Token: 0x02000029 RID: 41
-	public enum GizmoLine2DType
-	{
-		// Token: 0x0400009A RID: 154
-		Thin,
-		// Token: 0x0400009B RID: 155
-		Box
-	}
+	Thin = 0,
+	Box = 1,
 }
+

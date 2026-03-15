@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectExtrudeGizmoExtrudeUpdateHandler : MulticastDelegate
 {
-	// Token: 0x0200006B RID: 107
-	// (Invoke) Token: 0x0600045D RID: 1117
-	public delegate void ObjectExtrudeGizmoExtrudeUpdateHandler(List<GameObject> clones);
+
+	public ObjectExtrudeGizmoExtrudeUpdateHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(List<GameObject> clones, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(List<GameObject> clones) { }
+
 }
+

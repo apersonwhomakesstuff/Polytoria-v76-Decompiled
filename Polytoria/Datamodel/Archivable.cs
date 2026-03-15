@@ -1,10 +1,10 @@
-﻿using System;
-using UnityEngine;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+[AttributeUsage(AttributeTargets::Property (128))]
+public class Archivable : PropertyAttribute
 {
-	// Token: 0x02000284 RID: 644
-	public class Archivable : PropertyAttribute
-	{
-	}
+
+	public Archivable() { }
+
 }
+

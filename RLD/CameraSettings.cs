@@ -1,26 +1,21 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public class CameraSettings : Settings
 {
-	// Token: 0x0200010C RID: 268
-	[Serializable]
-	public class CameraSettings : Settings
-	{
-		// Token: 0x170004E8 RID: 1256
-		// (get) Token: 0x06000E3B RID: 3643 RVA: 0x0001850D File Offset: 0x0001670D
-		// (set) Token: 0x06000E3C RID: 3644 RVA: 0x00018510 File Offset: 0x00016710
-		public bool CanProcessInput
-		{
-			get
-			{
-				return false;
-			}
-			set
-			{
-			}
-		}
+	[SerializeField]
+	private bool _canProcessInput; //Field offset: 0x28
 
-		// Token: 0x04000509 RID: 1289
-		private bool _canProcessInput;
+	public bool CanProcessInput
+	{
+		 get { } //Length: 5
+		 set { } //Length: 4
 	}
+
+	public CameraSettings() { }
+
+	public bool get_CanProcessInput() { }
+
+	public void set_CanProcessInput(bool value) { }
+
 }
+

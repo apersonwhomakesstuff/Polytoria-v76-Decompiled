@@ -1,10 +1,10 @@
-﻿using System;
-using UnityEngine;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+[AttributeUsage(AttributeTargets::Property (128))]
+public class CreatorProperty : PropertyAttribute
 {
-	// Token: 0x02000283 RID: 643
-	public class CreatorProperty : PropertyAttribute
-	{
-	}
+
+	public CreatorProperty() { }
+
 }
+

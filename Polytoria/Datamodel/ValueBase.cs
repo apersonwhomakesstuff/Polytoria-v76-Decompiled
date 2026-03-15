@@ -1,23 +1,14 @@
-﻿using System;
-using Polytoria.Lua;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+public class ValueBase : Instance
 {
-	// Token: 0x020002BF RID: 703
-	public class ValueBase : Instance
-	{
-		// Token: 0x06002384 RID: 9092 RVA: 0x0001BD3E File Offset: 0x00019F3E
-		protected void InvokeChanged()
-		{
-		}
+	public LuaEvent Changed; //Field offset: 0xF8
 
-		// Token: 0x06002386 RID: 9094 RVA: 0x0001BD48 File Offset: 0x00019F48
-		public override bool Weaved()
-		{
-			return false;
-		}
+	public ValueBase() { }
 
-		// Token: 0x04000CBA RID: 3258
-		public LuaEvent Changed;
-	}
+	protected void InvokeChanged() { }
+
+	public virtual bool Weaved() { }
+
 }
+

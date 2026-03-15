@@ -1,23 +1,12 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public struct NumSnapSteps
 {
-	// Token: 0x02000177 RID: 375
-	public struct NumSnapSteps
-	{
-		// Token: 0x04000626 RID: 1574
-		public float FltNumSteps;
+	public float FltNumSteps; //Field offset: 0x0
+	public float AbsFltNumSteps; //Field offset: 0x4
+	public int IntNumSteps; //Field offset: 0x8
+	public int AbsIntNumSteps; //Field offset: 0xC
+	public float AbsFracSteps; //Field offset: 0x10
 
-		// Token: 0x04000627 RID: 1575
-		public float AbsFltNumSteps;
-
-		// Token: 0x04000628 RID: 1576
-		public int IntNumSteps;
-
-		// Token: 0x04000629 RID: 1577
-		public int AbsIntNumSteps;
-
-		// Token: 0x0400062A RID: 1578
-		public float AbsFracSteps;
-	}
 }
+

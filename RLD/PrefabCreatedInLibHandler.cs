@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class PrefabCreatedInLibHandler : MulticastDelegate
 {
-	// Token: 0x0200019A RID: 410
-	// (Invoke) Token: 0x0600121D RID: 4637
-	public delegate void PrefabCreatedInLibHandler(RTPrefabLib prefabLib, RTPrefab prefab);
+
+	public PrefabCreatedInLibHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(RTPrefabLib prefabLib, RTPrefab prefab, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(RTPrefabLib prefabLib, RTPrefab prefab) { }
+
 }
+

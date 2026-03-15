@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class GizmoPreDragUpdateHandler : MulticastDelegate
 {
-	// Token: 0x02000053 RID: 83
-	// (Invoke) Token: 0x060002D6 RID: 726
-	public delegate void GizmoPreDragUpdateHandler(Gizmo gizmo, int handleId);
+
+	public GizmoPreDragUpdateHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(Gizmo gizmo, int handleId, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(Gizmo gizmo, int handleId) { }
+
 }
+

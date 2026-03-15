@@ -1,115 +1,123 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+namespace RLD;
 
-namespace RLD
+public class RTCameraViewports : Singleton<RTCameraViewports>
 {
-	// Token: 0x02000111 RID: 273
-	public class RTCameraViewports : Singleton<RTCameraViewports>
+	internal sealed class CameraAddedHandler : MulticastDelegate
 	{
-		// Token: 0x1400001A RID: 26
-		// (add) Token: 0x06000E76 RID: 3702 RVA: 0x000185AE File Offset: 0x000167AE
-		// (remove) Token: 0x06000E77 RID: 3703 RVA: 0x000185B0 File Offset: 0x000167B0
-		public event RTCameraViewports.CameraAddedHandler CameraAdded
-		{
-			add
-			{
-			}
-			remove
-			{
-			}
-		}
 
-		// Token: 0x1400001B RID: 27
-		// (add) Token: 0x06000E78 RID: 3704 RVA: 0x000185B2 File Offset: 0x000167B2
-		// (remove) Token: 0x06000E79 RID: 3705 RVA: 0x000185B4 File Offset: 0x000167B4
-		public event RTCameraViewports.CameraRemovedHandler CameraRemoved
-		{
-			add
-			{
-			}
-			remove
-			{
-			}
-		}
+		public CameraAddedHandler(object object, IntPtr method) { }
 
-		// Token: 0x1400001C RID: 28
-		// (add) Token: 0x06000E7A RID: 3706 RVA: 0x000185B6 File Offset: 0x000167B6
-		// (remove) Token: 0x06000E7B RID: 3707 RVA: 0x000185B8 File Offset: 0x000167B8
-		public event RTCameraViewports.FocusCameraChangedHandler FocusCameraChanged
-		{
-			add
-			{
-			}
-			remove
-			{
-			}
-		}
+		public override IAsyncResult BeginInvoke(Camera camera, AsyncCallback callback, object object) { }
 
-		// Token: 0x17000505 RID: 1285
-		// (get) Token: 0x06000E7C RID: 3708 RVA: 0x000185BA File Offset: 0x000167BA
-		public Camera FocusCamera
-		{
-			get
-			{
-				return null;
-			}
-		}
+		public override void EndInvoke(IAsyncResult result) { }
 
-		// Token: 0x17000506 RID: 1286
-		// (get) Token: 0x06000E7D RID: 3709 RVA: 0x000185BD File Offset: 0x000167BD
-		public int NumCameras
-		{
-			get
-			{
-				return 0;
-			}
-		}
+		public override void Invoke(Camera camera) { }
 
-		// Token: 0x06000E7E RID: 3710 RVA: 0x000185C0 File Offset: 0x000167C0
-		public bool ContainsCamera(Camera camera)
-		{
-			return false;
-		}
-
-		// Token: 0x06000E7F RID: 3711 RVA: 0x000185C3 File Offset: 0x000167C3
-		public void AddCamera(Camera camera, Rect normViewRect)
-		{
-		}
-
-		// Token: 0x06000E80 RID: 3712 RVA: 0x000185C5 File Offset: 0x000167C5
-		public void AddCamera(Camera camera)
-		{
-		}
-
-		// Token: 0x06000E81 RID: 3713 RVA: 0x000185C7 File Offset: 0x000167C7
-		public void RemoveCamera(Camera camera)
-		{
-		}
-
-		// Token: 0x06000E82 RID: 3714 RVA: 0x000185C9 File Offset: 0x000167C9
-		public void SetFocusCamera(int cameraIndex)
-		{
-		}
-
-		// Token: 0x06000E83 RID: 3715 RVA: 0x000185CB File Offset: 0x000167CB
-		public void SetFocusCamera(Camera camera)
-		{
-		}
-
-		// Token: 0x04000524 RID: 1316
-		private List<Camera> _cameras;
-
-		// Token: 0x02000379 RID: 889
-		// (Invoke) Token: 0x06002A68 RID: 10856
-		public delegate void CameraAddedHandler(Camera camera);
-
-		// Token: 0x0200037A RID: 890
-		// (Invoke) Token: 0x06002A6C RID: 10860
-		public delegate void CameraRemovedHandler(Camera camera);
-
-		// Token: 0x0200037B RID: 891
-		// (Invoke) Token: 0x06002A70 RID: 10864
-		public delegate void FocusCameraChangedHandler(Camera oldFocusCam, Camera newFocusCam);
 	}
+
+	internal sealed class CameraRemovedHandler : MulticastDelegate
+	{
+
+		public CameraRemovedHandler(object object, IntPtr method) { }
+
+		public override IAsyncResult BeginInvoke(Camera camera, AsyncCallback callback, object object) { }
+
+		public override void EndInvoke(IAsyncResult result) { }
+
+		public override void Invoke(Camera camera) { }
+
+	}
+
+	internal sealed class FocusCameraChangedHandler : MulticastDelegate
+	{
+
+		public FocusCameraChangedHandler(object object, IntPtr method) { }
+
+		public override IAsyncResult BeginInvoke(Camera oldFocusCam, Camera newFocusCam, AsyncCallback callback, object object) { }
+
+		public override void EndInvoke(IAsyncResult result) { }
+
+		public override void Invoke(Camera oldFocusCam, Camera newFocusCam) { }
+
+	}
+
+	[CompilerGenerated]
+	private CameraAddedHandler CameraAdded; //Field offset: 0x10
+	[CompilerGenerated]
+	private CameraRemovedHandler CameraRemoved; //Field offset: 0x18
+	[CompilerGenerated]
+	private FocusCameraChangedHandler FocusCameraChanged; //Field offset: 0x20
+	private List<Camera> _cameras; //Field offset: 0x28
+
+	public event CameraAddedHandler CameraAdded
+	{
+		[CompilerGenerated]
+		 add { } //Length: 158
+		[CompilerGenerated]
+		 remove { } //Length: 158
+	}
+
+	public event CameraRemovedHandler CameraRemoved
+	{
+		[CompilerGenerated]
+		 add { } //Length: 158
+		[CompilerGenerated]
+		 remove { } //Length: 158
+	}
+
+	public event FocusCameraChangedHandler FocusCameraChanged
+	{
+		[CompilerGenerated]
+		 add { } //Length: 158
+		[CompilerGenerated]
+		 remove { } //Length: 158
+	}
+
+	public Camera FocusCamera
+	{
+		 get { } //Length: 96
+	}
+
+	public int NumCameras
+	{
+		 get { } //Length: 60
+	}
+
+	public RTCameraViewports() { }
+
+	[CompilerGenerated]
+	public void add_CameraAdded(CameraAddedHandler value) { }
+
+	[CompilerGenerated]
+	public void add_CameraRemoved(CameraRemovedHandler value) { }
+
+	[CompilerGenerated]
+	public void add_FocusCameraChanged(FocusCameraChangedHandler value) { }
+
+	public void AddCamera(Camera camera, Rect normViewRect) { }
+
+	public void AddCamera(Camera camera) { }
+
+	public bool ContainsCamera(Camera camera) { }
+
+	public Camera get_FocusCamera() { }
+
+	public int get_NumCameras() { }
+
+	[CompilerGenerated]
+	public void remove_CameraAdded(CameraAddedHandler value) { }
+
+	[CompilerGenerated]
+	public void remove_CameraRemoved(CameraRemovedHandler value) { }
+
+	[CompilerGenerated]
+	public void remove_FocusCameraChanged(FocusCameraChangedHandler value) { }
+
+	public void RemoveCamera(Camera camera) { }
+
+	public void SetFocusCamera(int cameraIndex) { }
+
+	public void SetFocusCamera(Camera camera) { }
+
 }
+

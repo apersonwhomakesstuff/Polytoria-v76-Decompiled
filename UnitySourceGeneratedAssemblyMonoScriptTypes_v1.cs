@@ -1,32 +1,24 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+//Type is in global namespace
 
-// Token: 0x0200000A RID: 10
+[CompilerGenerated]
+[EditorBrowsable(EditorBrowsableState::Never (1))]
+[GeneratedCode("Unity.MonoScriptGenerator.MonoScriptInfoGenerator", null)]
 internal class UnitySourceGeneratedAssemblyMonoScriptTypes_v1
 {
-	// Token: 0x06000034 RID: 52 RVA: 0x0001DE14 File Offset: 0x0001C014
-	[MethodImpl(256)]
-	private static UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData Get()
-	{
-		return default(UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData);
-	}
-
-	// Token: 0x0200034D RID: 845
 	private struct MonoScriptData
 	{
-		// Token: 0x04000E98 RID: 3736
-		public byte[] FilePathsData;
+		public Byte[] FilePathsData; //Field offset: 0x0
+		public Byte[] TypesData; //Field offset: 0x8
+		public int TotalTypes; //Field offset: 0x10
+		public int TotalFiles; //Field offset: 0x14
+		public bool IsEditorOnly; //Field offset: 0x18
 
-		// Token: 0x04000E99 RID: 3737
-		public byte[] TypesData;
-
-		// Token: 0x04000E9A RID: 3738
-		public int TotalTypes;
-
-		// Token: 0x04000E9B RID: 3739
-		public int TotalFiles;
-
-		// Token: 0x04000E9C RID: 3740
-		public bool IsEditorOnly;
 	}
+
+
+	public UnitySourceGeneratedAssemblyMonoScriptTypes_v1() { }
+
+	private static MonoScriptData Get() { }
+
 }
+

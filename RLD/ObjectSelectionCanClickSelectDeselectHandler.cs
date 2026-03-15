@@ -1,8 +1,15 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public sealed class ObjectSelectionCanClickSelectDeselectHandler : MulticastDelegate
 {
-	// Token: 0x0200022E RID: 558
-	// (Invoke) Token: 0x06001885 RID: 6277
-	public delegate void ObjectSelectionCanClickSelectDeselectHandler(YesNoAnswer answer);
+
+	public ObjectSelectionCanClickSelectDeselectHandler(object object, IntPtr method) { }
+
+	public override IAsyncResult BeginInvoke(YesNoAnswer answer, AsyncCallback callback, object object) { }
+
+	public override void EndInvoke(IAsyncResult result) { }
+
+	public override void Invoke(YesNoAnswer answer) { }
+
 }
+

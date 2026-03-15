@@ -1,15 +1,9 @@
-﻿using System;
+namespace RLD;
 
-namespace RLD
+public enum ObjectGrabSurfaceFlags : int
 {
-	// Token: 0x020001CE RID: 462
-	public enum ObjectGrabSurfaceFlags
-	{
-		// Token: 0x0400075C RID: 1884
-		Mesh = 1,
-		// Token: 0x0400075D RID: 1885
-		Terrain,
-		// Token: 0x0400075E RID: 1886
-		Grid = 4
-	}
+	Mesh = 1,
+	Terrain = 2,
+	Grid = 4,
 }
+

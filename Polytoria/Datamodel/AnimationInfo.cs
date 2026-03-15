@@ -1,80 +1,73 @@
-﻿using System;
+namespace Polytoria.Datamodel;
 
-namespace Polytoria.Datamodel
+public class AnimationInfo
 {
-	// Token: 0x0200028F RID: 655
-	public class AnimationInfo
+	[CompilerGenerated]
+	private string <Name>k__BackingField; //Field offset: 0x10
+	[CompilerGenerated]
+	private string <Path>k__BackingField; //Field offset: 0x18
+	[CompilerGenerated]
+	private float <Length>k__BackingField; //Field offset: 0x20
+	[CompilerGenerated]
+	private bool <IsPlaying>k__BackingField; //Field offset: 0x24
+
+	public bool IsPlaying
 	{
-		// Token: 0x17000942 RID: 2370
-		// (get) Token: 0x06001D57 RID: 7511 RVA: 0x0001AD62 File Offset: 0x00018F62
-		// (set) Token: 0x06001D58 RID: 7512 RVA: 0x0001AD6A File Offset: 0x00018F6A
-		public string Name
-		{
-			get
-			{
-				return this.<Name>k__BackingField;
-			}
-			set
-			{
-				this.<Name>k__BackingField = value;
-			}
-		}
-
-		// Token: 0x17000943 RID: 2371
-		// (get) Token: 0x06001D59 RID: 7513 RVA: 0x0001AD73 File Offset: 0x00018F73
-		// (set) Token: 0x06001D5A RID: 7514 RVA: 0x0001AD7B File Offset: 0x00018F7B
-		public string Path
-		{
-			get
-			{
-				return this.<Path>k__BackingField;
-			}
-			set
-			{
-				this.<Path>k__BackingField = value;
-			}
-		}
-
-		// Token: 0x17000944 RID: 2372
-		// (get) Token: 0x06001D5B RID: 7515 RVA: 0x0001AD84 File Offset: 0x00018F84
-		// (set) Token: 0x06001D5C RID: 7516 RVA: 0x0001AD8C File Offset: 0x00018F8C
-		public float Length
-		{
-			get
-			{
-				return this.<Length>k__BackingField;
-			}
-			set
-			{
-				this.<Length>k__BackingField = value;
-			}
-		}
-
-		// Token: 0x17000945 RID: 2373
-		// (get) Token: 0x06001D5D RID: 7517 RVA: 0x0001AD95 File Offset: 0x00018F95
-		// (set) Token: 0x06001D5E RID: 7518 RVA: 0x0001AD9D File Offset: 0x00018F9D
-		public bool IsPlaying
-		{
-			get
-			{
-				return this.<IsPlaying>k__BackingField;
-			}
-			set
-			{
-				this.<IsPlaying>k__BackingField = value;
-			}
-		}
-
-		// Token: 0x04000AAE RID: 2734
-		private string <Name>k__BackingField;
-
-		// Token: 0x04000AAF RID: 2735
-		private string <Path>k__BackingField;
-
-		// Token: 0x04000AB0 RID: 2736
-		private float <Length>k__BackingField;
-
-		// Token: 0x04000AB1 RID: 2737
-		private bool <IsPlaying>k__BackingField;
+		[CompilerGenerated]
+		 get { } //Length: 5
+		[CompilerGenerated]
+		 set { } //Length: 4
 	}
+
+	public float Length
+	{
+		[CompilerGenerated]
+		 get { } //Length: 6
+		[CompilerGenerated]
+		 set { } //Length: 6
+	}
+
+	public string Name
+	{
+		[CompilerGenerated]
+		 get { } //Length: 5
+		[CompilerGenerated]
+		 set { } //Length: 13
+	}
+
+	public string Path
+	{
+		[CompilerGenerated]
+		 get { } //Length: 5
+		[CompilerGenerated]
+		 set { } //Length: 13
+	}
+
+	public AnimationInfo() { }
+
+	[CompilerGenerated]
+	public bool get_IsPlaying() { }
+
+	[CompilerGenerated]
+	public float get_Length() { }
+
+	[CompilerGenerated]
+	public string get_Name() { }
+
+	[CompilerGenerated]
+	public string get_Path() { }
+
+	[CompilerGenerated]
+	public void set_IsPlaying(bool value) { }
+
+	[CompilerGenerated]
+	public void set_Length(float value) { }
+
+	[CompilerGenerated]
+	public void set_Name(string value) { }
+
+	[CompilerGenerated]
+	public void set_Path(string value) { }
+
 }
+

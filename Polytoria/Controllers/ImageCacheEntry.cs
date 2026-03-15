@@ -1,18 +1,12 @@
-﻿using System;
-using UnityEngine;
+namespace Polytoria.Controllers;
 
-namespace Polytoria.Controllers
+public class ImageCacheEntry
 {
-	// Token: 0x0200032B RID: 811
-	public class ImageCacheEntry
-	{
-		// Token: 0x04000D9F RID: 3487
-		public Texture2D texture;
+	public Texture2D texture; //Field offset: 0x10
+	public bool loaded; //Field offset: 0x18
+	public bool hasTransparency; //Field offset: 0x19
 
-		// Token: 0x04000DA0 RID: 3488
-		public bool loaded;
+	public ImageCacheEntry() { }
 
-		// Token: 0x04000DA1 RID: 3489
-		public bool hasTransparency;
-	}
 }
+

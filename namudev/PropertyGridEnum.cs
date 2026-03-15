@@ -1,41 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+namespace namudev;
 
-namespace namudev
+public class PropertyGridEnum : PropertyGridItem<Enum>
 {
-	// Token: 0x02000243 RID: 579
-	public class PropertyGridEnum : PropertyGridItem<Enum>
+	[CompilerGenerated]
+	private sealed class <>c__DisplayClass3_0
 	{
-		// Token: 0x06001986 RID: 6534 RVA: 0x0001A286 File Offset: 0x00018486
-		protected override void Awake()
-		{
-		}
+		public PropertyGridEnum <>4__this; //Field offset: 0x10
+		public List<Enum> values; //Field offset: 0x18
 
-		// Token: 0x06001987 RID: 6535 RVA: 0x0001A288 File Offset: 0x00018488
-		private void Start()
-		{
-		}
+		public <>c__DisplayClass3_0() { }
 
-		// Token: 0x0400092D RID: 2349
-		private GameObject caption;
+		internal void <Start>b__0(int index) { }
 
-		// Token: 0x0400092E RID: 2350
-		private GameObject controls;
-
-		// Token: 0x020003DA RID: 986
-		private sealed class <>c__DisplayClass3_0
-		{
-			// Token: 0x06002B53 RID: 11091 RVA: 0x0001D528 File Offset: 0x0001B728
-			internal void <Start>b__0(int index)
-			{
-			}
-
-			// Token: 0x04001055 RID: 4181
-			public PropertyGridEnum <>4__this;
-
-			// Token: 0x04001056 RID: 4182
-			public List<Enum> values;
-		}
 	}
+
+	private GameObject caption; //Field offset: 0x30
+	private GameObject controls; //Field offset: 0x38
+
+	public PropertyGridEnum() { }
+
+	protected virtual void Awake() { }
+
+	private void Start() { }
+
 }
+
